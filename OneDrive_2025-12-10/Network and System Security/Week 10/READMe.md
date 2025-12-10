@@ -1,0 +1,1 @@
+This week had no lab due to it being the end of the term.

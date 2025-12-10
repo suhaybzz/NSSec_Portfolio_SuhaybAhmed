@@ -1,0 +1,23 @@
+Hashes
+
+MD5, SHA1, and SHA256 provide unique fingerprints of a file. In malware analysis these are used for IOC sharing and identifying known malware samples.
+
+Strings
+
+Extracting printable strings can reveal functionality clues such as file paths, registry keys, commands, or network indicators.
+
+PE Header & Imports
+
+Reading the Portable Executable structure shows entry point, image base, and imported Windows API functions. Malware often imports suspicious APIs such as CreateRemoteThread, VirtualAllocEx, WinExec.
+
+IOC Extraction
+
+Scanning for URLs and IP addresses helps analysts find C2 servers or suspicious network activity.
+
+YARA
+
+YARA rules detect patterns inside binaries. I created a rule that matches the string “http” to demonstrate signature-based classification.
+
+Full Triage Workflow
+
+Combining all steps replicates a realistic malware triage workflow used in SOCs and threat intelligence.

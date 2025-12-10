@@ -1,0 +1,29 @@
+WEEK 09 – GEN AI SECURITY LAB NOTES
+
+Model used: smollm2:1.7b
+Platform: Ollama local LLM
+
+Part I Observations:
+- Model responds with basic general knowledge.
+- Latency and quality commented.
+
+Prompt Injection:
+- Whether or not the model followed harmful instructions.
+
+Data Poisoning:
+- Baseline answer.
+- Poisoned answer.
+- Whether drift persisted.
+
+Model Inversion:
+- Did the model hallucinate or claim to remember PII?
+
+Model Extraction:
+- Evaluate if consistent predictable outputs occur.
+
+Mitigation ideas:
+- Input sanitisation
+- Output monitoring
+- Rate limiting
+- Governance controls
+- Dataset security
